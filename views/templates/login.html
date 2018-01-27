@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Snifr</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+            rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
+            <script src="./js/app.js"></script>
+        <link rel="stylesheet" href="./css/main.css" type="text/css">
+        <link rel="stylesheet" href="./css/login.css" type="text/css">
+        <link rel="stylesheet" href="./css/survey.css" type="text/css">
+        <link rel="stylesheet" href="./css/profile.css" type="text/css">
+    </head>
+    <body>
+        <div class="row" id="header">
+           
+                
+                <div id="title">
+                        <h1>Snifr</h1>  
+                </div>
+            
+        </div>
+        <div class="row" id="mainRow">
+            <div class="col col-md-2" id="leftSide">
+                <div>
+                    <img class="img-circle" id="leftLogo" src="../../public/media/logo1.jpg">
+                    
+                </div>
+                <div id="leftTxt">
+                    <p>A Website for Dogs on the Prowl</p>
+                </div>
+                <div id="taskBar">
+                    <br>
+                    <a href="" id="tb1">Home</a>
+                    <hr>
+                    <a href="" id="tb2">Matches</a>
+                    <hr>
+                    <a href="" id="tb3">Nearby</a>
+                    <hr>
+                    <a href="" id="tb4">Barks</a>
+                    <hr>
+                </div>
+                <div>
+                    <br>
+                </div>
+            </div>
+            <div class="col col-md-9">
+                <div id="mainViewWindow">
+                    <div class="container" id="loginPanel">
+
+                        <div class="row" id="loginPanelRowOne">
+                            <h1>Welcome to Snifr!</h1>
+                            <p>The premier Dog matching App!</p>
+                            <p>If your dog is already a member, sign in and continue on the journey towards endless doggie-dates! If not, click Join to sign up!</p>
+                            <hr>
+                        </div>
+                        <div class="row" id="loginPanelRowTwo">
+                            <div class="col col-sm-5" id="loginPanelRowTwoColOne">
+                                <button type="button" class="btn btn-primary" id="LPbutLogin">Login</button>
+                            </div>
+                            <div class="col col-sm-1"></div>
+                            <div class="col col-sm-5" id="loginPanelRowTwoColTwo">
+                                <button type="button" class="btn btn-success" id="LPbutJoin">Join</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <button type="submit" class="btn btn-success hiddenBtn" id="LPbutLoginSubmit">Login</button>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+           
+        
+    </body>
+
+<!-- To be taken out once the js file is working -->
+    <script>
+        var emailHeader = "<h1>Email</h>";
+        var emailInput = '<input type="text" id="email" required>';
+        var passwordHeader = "<h1>Password</h>";
+        var passwordInput = '<input type="password" id="password" required>';
+        var loginSubmit = '<button type="submit">';
+
+        $( "#LPbutLogin" ).click(function() {
+          $("#loginPanelRowTwoColOne" ).empty();
+          $("#loginPanelRowTwoColTwo" ).empty();
+          $("#loginPanelRowTwoColOne").append(emailHeader, emailInput);
+          $("#loginPanelRowTwoColTwo").append(passwordHeader, passwordInput);
+          $("#LPbutLoginSubmit").removeClass("hiddenBtn");
+          $("#loginPanelRowTwoColOne").attr("id", "loginPanelEmailLogin");
+          $("#loginPanelRowTwoColTwo").attr("id", "loginPanelEmailPassword");
+        });
+        
+        $("#LPbutJoin").click(function(){
+            window.location.replace('/survey1');
+        })
+        
+        $("#LPbutLoginSubmit").click(function(){
+            let email = $("#email").val().trim();
+            $("#email").val("");
+            let password = $("#password").val().trim();
+            console.log(email);
+            console.log(password);
+            
+            $.post("/signin", {
+                username: email,
+                password: password
+            }).then(data => {
+                console.log(data);
+                if (data.authorized === "YES"){
+                    window.location.replace('/profile');
+                }
+            });
+        });
+    </script>
+
+</html>

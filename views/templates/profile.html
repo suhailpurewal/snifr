@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Snifr</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+            rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+            <link rel="stylesheet" href="./css/main.css" type="text/css">
+            <link rel="stylesheet" href="./css/login.css" type="text/css">
+            <link rel="stylesheet" href="./survey.css" type="text/css">
+            <link rel="stylesheet" href="./css/profile.css" type="text/css">
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
+            <script src="./js/app.js"></script>
+    </head>
+    <body>
+        <div class="row" id="header">
+           
+                
+                <div id="title">
+                        <h1>Snifr</h1>  
+                </div>
+            
+        </div>
+        <div class="row" id="mainRow">
+            <div class="col col-md-2" id="leftSide">
+                <div>
+                    <img class="img-circle" id="leftLogo" src="../../public/media/logo1.jpg">
+                    
+                </div>
+                <div id="leftTxt">
+                    <p>A Website for Dogs on the Prowl</p>
+                </div>
+                <div id="taskBar">
+                    <br>
+                    <a href="" id="tb1">Home</a>
+                    <hr>
+                    <a href="" id="tb2">Matches</a>
+                    <hr>
+                    <a href="" id="tb3">Nearby</a>
+                    <hr>
+                    <a href="" id="tb4">Barks</a>
+                    <hr>
+                </div>
+            </div>
+            <div class="col col-md-9">
+                <div id="mainViewWindow">
+                    <div class="container" id="profileFull">
+                        <div class="row">
+                            <div class="col col-sm-5" id="profileImgCol">
+                                <div class="row">
+                                    <div class="row" id="profileImgRow">
+                                        <div class="row" id="profileName">
+                                            <h2>Ida Bear</h2>      
+                                        </div>
+                                        <img id="profileImg" src="../../public/media/imgExample.jpg">
+                                    </div>
+                                    <div class="row" id="sniffGrowlRow">
+                                        <div class="col col-sm-5">
+                                                <button type="button" class="btn btn-primary" id="sniffBtn">Sniff</button>
+                                        </div>
+                                        <div class="col col-sm-1"></div>
+                                        <div class="col col-sm-5">
+                                                <button type="button" class="btn btn-danger" id="growlBtn">Bark</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-sm-1"></div>
+                            <div class="col col-sm-6" id="profileInfoCol">
+                                <div class="row" id="profileBasicInfoCont1">
+                                    <div class="row" id="profileBasicInfoRow1">
+                                        <h2>Basic Info</h2>
+                                        <!-- <hr> -->
+                                    </div> 
+                                    <div class="row" id="profileBasicInfoRow2">
+                                        
+                                        <div class="col col-sm-5" id="profileBasicInfoCol1">
+                                            <h4 id="breed">Breed: </h4>
+                                            <h4 id="sex">Sex: </h4>
+                                            <h4 id="size">Size: </h4>
+                                            
+                                        </div>
+                                        <!-- <div class="col col-sm-1"></div> -->
+                                        <div class="col col-sm-5" id="profileBasicInfoCol2">
+                                            <h4 id="age">Age: </h4>
+                                            <h4 id="fixed">Fixed: </h4>
+                                            <h4 id="temperament">Temperament: </h4>
+                                        </div>
+                                    </div> 
+                                    <div class="row" id="profileBasicInfoRow3">
+                                        
+                                    </div>
+                                </div>
+                                <div class="row" id="profileBasicInfoCont2">
+                                    <div class="row" id="profileDescriptionHeader">
+                                        <h2>Description</h2>
+                                    </div>
+                                    <div class="row" id="profileDescriptionBody">
+                                        <p id="description">I am a playful, yet cautious dog.  I love pets, and cuddles to a limit.  Hate squirrels, they are satan-spawn.  I love playing with other dogs, particularly those around my size, and I am very submissive of those bigger than me.  I always need new friends.</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+
+
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+           
+        <!-- </div> -->
+    </body>
+
+    <style type="text/css">
+        #header {
+            background-color: blue;
+            border-top: 5px outset  #00008B;
+            border-left: 20px outset #00008B;
+            margin-bottom: 0%;
+            text-align: center;
+            position: relative;
+            height: 50px;
+        }
+
+        .img-circle {
+            border-radius: 50%;
+            border: 5px solid #00008B;
+        }
+
+        #title {
+            position: absolute;
+            display: block;
+            top: -20%;
+            left: 45%;
+            height: 117px;
+            width: 210px;
+            background-color: #00008B;
+            border-radius: 0px 0px 50px 50px;
+        }
+
+        #title h1 {
+            font-family: Comic Sans MS, cursive, sans-serif;
+            font-weight: bold;
+            font-size: 72px;
+            color: yellow; 
+        }
+
+        #leftLogo {
+            position: absolute;
+            left: 16%;
+            top: -6%;
+            height: 125px;
+            width: 132px;
+            bottom: 15px;
+            
+        }
+
+        #leftTxt {
+            font-family: Comic Sans MS, cursive, sans-serif;
+            position: absolute;
+            top: 13%;
+            text-align: center;
+            margin-right: 15px;
+            color: yellow;
+        }
+
+        #searchBox {
+            position: absolute;
+            right: 0%;
+            width: 220px;
+            top: 5px;
+        }
+
+        #leftSide {
+            background-color: blue;
+            margin-top: 0%;
+            height: 720px;
+            position: relative;
+            border-left: 20px outset #00008B;
+            width: 220px;
+        }
+
+        #taskBar {
+            text-align: center;
+            position: absolute;
+            top: 20%;
+            width: 180px;
+            background-color: #6495ED;
+            right: 0%;
+            bottom: 0%;
+            border-radius: 50px 0px 0px 0px;
+            
+        }
+
+        #taskBar a {
+            color: #483D8B;
+            font-weight: bold;
+        }
+
+        #taskBar hr {
+            background-color: #00008B;
+            width: 165px;
+            border-top: 2px solid #00008B;
+        }
+
+        #tb1 {
+            margin-top: 5%;
+        }
+
+        #mainRow {
+            background-image: url('../../public/media/contBG.jpg');
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+
+        .container {
+            border: 5px solid #00008B;
+            border-radius: 30px 30px 30px 30px;
+            display: block;
+            margin-top: 10%;
+            margin-left: 2%;
+            width: 100%;
+            height: 600px;
+            background-color: #FFFAF0;
+            position: relative;
+
+        }
+
+        /*survey page, minus the scroll and stuff from container above*/
+
+        /*#surveyPage {
+            position: absolute;
+            left: 2%;
+            width: 96%;
+
+        }
+
+        #survRowOne {
+            text-align: center;
+        }
+
+        #Description {
+            width: 100%;
+            height: 150px;
+        }*/
+       /*login css stuffs*/
+/*
+        #loginPanel {
+            width: 475px;
+            height: 280px;
+            margin-top: 12%;
+        }
+
+        #loginPanelRowOne {
+            font-family: Comic Sans MS, cursive, sans-serif;
+            text-align: center;
+        }
+
+        #loginPanelRowOne h1 {
+            font-weight: bold;
+        }
+
+        #loginPanelRowTwo{
+            margin-top: ;
+        }
+
+        #LPbut {
+            height: 50px;
+            width: 195px;
+            font-size: 20px;
+        }
+
+        #loginPanelEmailLogin {
+            text-align: center;
+            font-family: Comic Sans MS, cursive, sans-serif;
+            margin-top: -7%;
+        }
+
+        #loginPanelEmailPassword {
+            text-align: center;
+            font-family: Comic Sans MS, cursive, sans-serif;
+            margin-top: -7%;
+        }*/
+
+        /*profile css*/
+
+        #profileFull {
+            background-color: transparent;
+            border: 0px;
+        }
+
+        #profileImgRow {
+            border: 5px solid #00008B;
+            border-radius: 30px 30px 30px 30px;
+            display: block;
+            background-color: #FFFAF0;
+            height: 400px;
+        }
+
+        #profileName {
+            text-align: center;
+            font-family: Comic Sans MS, cursive, sans-serif;
+        }
+
+        #profileImg {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+        }
+
+        #sniffGrowlRow {
+            border: 5px solid #00008B;
+            border-radius: 30px 30px 30px 30px;
+            display: block;
+            background-color: #FFFAF0;
+            height: 60px;
+            margin-top: 25px;
+        }
+
+        #sniffBtn {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 130px;
+            height: 40px;
+            margin-top: 3%;
+            font-size: 20px;
+        }
+
+        #growlBtn {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 130px;
+            height: 40px;
+            margin-top: 3%;
+            font-size: 20px;
+        }
+
+        #profileBasicInfoCont2 {
+            border: 5px solid #00008B;
+            border-radius: 30px 30px 30px 30px;
+            display: block;
+            background-color: #FFFAF0;
+            height: 210px;
+            margin-top: 25px;
+        }
+
+        #profileDescriptionHeader {
+            text-align: center;
+        }
+
+        #profileDescriptionBody {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        #profileBasicInfoCont1 {
+            border: 5px solid #00008B;
+            border-radius: 30px 30px 30px 30px;
+            display: block;
+            background-color: #FFFAF0;
+            height: 250px;
+            
+        }
+
+        #profileBasicInfoRow1 {
+            text-align: center;
+        }
+
+        #profileBasicInfoRow2 {
+            
+        }
+
+        #profileBasicInfoCol1 {
+            margin-left: 2%;
+        }
+
+        #profileBasicInfoCol1 h4{
+            margin-bottom: 30px;
+        }
+
+        #profileBasicInfoCol2 h4{
+            margin-bottom: 30px;
+        }
+
+        #profileBasicInfoRow3 {
+            
+        }
+
+
+
+    </style>
+</html>

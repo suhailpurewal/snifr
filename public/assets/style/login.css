@@ -1,0 +1,56 @@
+        #loginPanel {
+            width: 475px;
+            height: 300px;
+            margin-top: 12%;
+            border: 5px solid #00008B;
+            border-radius: 30px 30px 30px 30px;
+            display: block;
+            background-color: #FFFAF0;
+        }
+
+        #loginPanelRowOne {
+            font-family: Comic Sans MS, cursive, sans-serif;
+            text-align: center;
+        }
+
+        #loginPanelRowOne h1 {
+            font-weight: bold;
+        }
+
+        #loginPanelRowTwo{
+            margin-top: ;
+        }
+
+        #LPbutLogin {
+            height: 50px;
+            width: 195px;
+            font-size: 20px;
+        }
+
+        #LPbutJoin {
+            height: 50px;
+            width: 195px;
+            font-size: 20px;
+        }
+
+        #loginPanelEmailLogin {
+            text-align: center;
+            font-family: Comic Sans MS, cursive, sans-serif;
+            margin-top: -7%;
+        }
+
+        #loginPanelEmailPassword {
+            text-align: center;
+            font-family: Comic Sans MS, cursive, sans-serif;
+            margin-top: -7%;
+        }
+
+        #LPbutLoginSubmit {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 1%;
+            height: 40px;
+            width: 130px;
+            font-size: 20px;
+        }

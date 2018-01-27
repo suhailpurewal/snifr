@@ -1,0 +1,25 @@
+<div id="dogContainer">
+				{{#each Dog}}
+                	<div class="row" id="yourDogs">
+                		<div class="col col-sm-2">
+	                		<img src="{{this.photo}}" id="dogImg">
+	                	</div>
+	                	<div class="col col-sm-6">
+							
+	                		<h2 id="dogName"><a href="/profile/{{this.id}}">{{this.name}}</a></h2>
+	                		<hr>
+	                		<h3 id="dogHuman">Breed: {{this.breed}} </h3>
+	                	</div>
+	                	<div class="col col-sm-4">
+	                		{{!--<button type="button" class="btn btn-success" id="edit">Edit</button>--}}
+	                		<a class="btn btn-default" href="/update/profile" role="button">Profile</a>
+	                		<a class="btn btn-default" href="/update/survey" role="button">Personality</a>
+	                		<a class="btn btn-default" href="/update/filter" role="button">Filters</a>
+	                	</div>
+
+                	</div>
+					
+					{{/each}}
+					
+                    
+                </div>

@@ -1,0 +1,34 @@
+        #profileFull {
+            background-color: transparent;
+            border: 0px;
+            margin-top: 12%;
+        }
+
+        #profileImgCol {
+            border: 5px solid #00008B;
+            border-radius: 30px 30px 30px 30px;
+            display: block;
+            background-color: #FFFAF0;
+            height: 400px;
+        }
+
+        #profileInfoCol {
+            width: 30%;
+        }
+
+        #profileSniffBarkEditRow {
+            border: 5px solid #00008B;
+            border-radius: 30px 30px 30px 30px;
+            display: block;
+            background-color: #FFFAF0;
+            height: 100px;
+            margin-bottom: 25px;
+        }
+
+        #profileBasicInfoRow {
+            border: 5px solid #00008B;
+            border-radius: 30px 30px 30px 30px;
+            display: block;
+            background-color: #FFFAF0;
+            height: 275px;
+        }

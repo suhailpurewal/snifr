@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Kavivanar|Risque');
+
+#header {
+            background-color: blue;
+            border-top: 5px outset  #00008B;
+            border-left: 20px outset #00008B;
+            margin-bottom: 0%;
+            text-align: center;
+            position: relative;
+            height: 50px;
+        }
+
+        .img-circle {
+            border-radius: 50%;
+            border: 5px solid #00008B;
+            background-color: white;
+        }
+
+        #title {
+            position: absolute;
+            display: block;
+            top: -20%;
+            left: 45%;
+            height: 117px;
+            width: 210px;
+            background-color: white;
+            border: 5px solid #00008B;
+            border-radius: 0px 0px 50px 50px;
+        }
+
+        #title h1 {
+            font-family: 'Kavivanar', cursive;;
+            font-weight: bold;
+            font-size: 72px;
+            color: yellow; 
+        }
+
+        #headerImage{
+            height: 120px;
+        }
+
+        #leftLogo {
+            position: absolute;
+            left: 16%;
+            top: -6%;
+            height: 125px;
+            width: 132px;
+            bottom: 15px;
+            
+        }
+
+        #leftTxt {
+            font-family: 'Kavivanar', cursive;
+            position: absolute;
+            top: 13%;
+            text-align: center;
+            margin-right: 15px;
+            color: yellow;
+        }
+
+        #aboutInfo {
+            color: yellow;
+            margin: 2%;
+            font-family: 'Kavivanar', cursive;
+        }
+
+        #searchBox {
+            position: absolute;
+            right: 0%;
+            width: 220px;
+            top: 5px;
+        }
+
+        #leftSide {
+            background-color: blue;
+            margin-top: 0%;
+            height: 720px;
+            position: relative;
+            border-left: 20px outset #00008B;
+            width: 220px;
+        }
+
+        #taskBar {
+            text-align: center;
+            position: absolute;
+            top: 20%;
+            width: 180px;
+            background-color: #6495ED;
+            right: 0%;
+            bottom: 0%;
+            border-radius: 50px 0px 0px 0px;
+            
+        }
+
+        #taskBar a {
+            color: #483D8B;
+            font-weight: bold;
+        }
+
+        #taskBar hr {
+            background-color: #00008B;
+            width: 165px;
+            border-top: 2px solid #00008B;
+        }
+
+        #tb1 {
+            margin-top: 5%;
+        }
+
+        #mainRow {
+            background-image: url('../media/contBG.jpg');
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+
+        #container {
+            border: 5px solid #00008B;
+            border-radius: 30px 30px 30px 30px;
+            display: block;
+            margin-top: 10%;
+            margin-left: 2%;
+            width: 100%;
+            height: 600px;
+            background-color: #FFFAF0;
+            position: relative;
+
+        }
+
+        .hiddenBtn {
+            visibility: hidden;
+        }

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Snifr</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+            rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/style.css" type="text/css">
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
+        <script src="../../js/app.js"></script>
+        <link rel="stylesheet" href="../../public/css/main.css" type="text/css">
+        <link rel="stylesheet" href="../../public/css/login.css" type="text/css">
+        <link rel="stylesheet" href="../../public/css/survey.css" type="text/css">
+        <link rel="stylesheet" href="../../public/css/profile.css" type="text/css">
+        <!-- <link rel="stylesheet" href="../../public/css/survey2.css" type="text/css"> -->
+
+    </head>
+    <body>
+        <div class="row" id="header">
+           
+                
+                <div id="title">
+                        <h1>Snifr</h1>  
+                </div>
+            
+        </div>
+        <div class="row" id="mainRow">
+            <div class="col col-md-2" id="leftSide">
+                <div>
+                    <img class="img-circle" id="leftLogo" src="../../public/media/logo1.jpg">
+                    
+                </div>
+                <div id="leftTxt">
+                    <p>A Website for Dogs on the Prowl</p>
+                </div>
+                <div id="taskBar">
+                    <br>
+                    <a href="" id="tb1">Home</a>
+                    <hr>
+                    <a href="" id="tb2">Matches</a>
+                    <hr>
+                    <a href="" id="tb3">Nearby</a>
+                    <hr>
+                    <a href="" id="tb4">Barks</a>
+                    <hr>
+                </div>
+            </div>
+            <div class="col col-md-9">
+                <div id="container">
+                    <div id="surveyPageTwo">
+                        <div class="row" id="survRowOne">
+                            <div class="col col-lg-2"></div>
+                            <div class="col col-lg-8">
+                                <h2>Your Ideal Doggie Match!</h2>
+                                <p>Last page, we promise! Help us narrow down the type of doggo you'd like as a play-mate by answering the questions below, than clock submit to create your profile and see your matches!</p>
+                                <hr>
+                            </div>
+                            <div class="col col-lg-2"></div>
+                        </div>
+                        <div class="row" id="survRowTwo">
+                            <div class= "col col-sm-6">
+                                <h4>Sex</h4>
+                                    <form action="/action_page.php">
+                                      <select id="sex"  style="width: 125px";>
+                                        <option value="NA">Doesn't Matter</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                      </select>
+                                      <br><br>
+                                    </form>
+                                <h4>Fixed</h4>
+                                    <form action="/action_page.php">
+                                      <select id="fixed"  style="width: 125px";>
+                                        <option value="NA">Doesn't Matter</option>
+                                        <option value="true">Yes</option>
+                                        <option value="false">No</option>
+                                      </select>
+                                      <br><br>
+                                    </form>
+
+                            </div>
+                            <div class="col col-sm-6">
+                                <h4>Size</h4>
+                                    <form action="/action_page.php">
+                                      <select id="size"  style="width: 125px";>
+                                        <option value="NA">Doesn't Matter</option>
+                                        <option value="less25">Less than 25 lbs</option>
+                                        <option value="less50">Less than 50 lbs</option>
+                                        <option value="less75">Less than 75 lbs</option>
+                                        <option value="less100">Less than 100 lbs</option>
+                                      </select>
+                                      <br><br>
+                                    </form>
+                                <h4>Temperament</h4>
+                                    <form action="/action_page.php">
+                                      <select id="temperament"  style="width: 125px";>
+                                        <option value="NA">Doesn't Matter</option>
+                                        <option value="agressive">Agressive</option>
+                                        <option value="active">Active</option>
+                                        <option value="playful">Playful</option>
+                                        <option value="shy">Shy</option>
+                                        <option value="lazy">Lazy</option>
+                                        <option value="submissive">Submissive</option>
+                                      </select>
+                                      <br><br>
+                                    </form>
+                            </div>
+                        </div>
+                        <div class="row" id="survRowFour">
+                            <div class="col col-sm-10"></div>
+                            <div class="col col-sm-2">
+                                <button type="button" class="btn btn-success" id="submit">Submit</button>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+    
+        </div>
+    </body>
+
+</html>

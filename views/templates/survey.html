@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Snifr</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+            rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
+        <script src="./js/app.js"></script>
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/main.css" type="text/css">
+        <link rel="stylesheet" href="./css/login.css" type="text/css">
+        <link rel="stylesheet" href="./css/survey.css" type="text/css">
+        <link rel="stylesheet" href="./css/profile.css" type="text/css">
+    </head>
+    <body>
+        <div class="row" id="header">
+           
+                
+                <div id="title">
+                        <h1>Snifr</h1>  
+                </div>
+            
+        </div>
+        <div class="row" id="mainRow">
+            <div class="col col-md-2" id="leftSide">
+                <div>
+                    <img class="img-circle" id="leftLogo" src="../../public/media/logo1.jpg">
+                    
+                </div>
+                <div id="leftTxt">
+                    <p>A Website for Dogs on the Prowl</p>
+                </div>
+                <div id="taskBar">
+                    <br>
+                    <a href="" id="tb1">Home</a>
+                    <hr>
+                    <a href="" id="tb2">Matches</a>
+                    <hr>
+                    <a href="" id="tb3">Nearby</a>
+                    <hr>
+                    <a href="" id="tb4">Barks</a>
+                    <hr>
+                </div>
+            </div>
+            <div class="col col-md-9">
+                <div id="container" id="surveyScroll">
+
+                    <div id="surveyPage">
+                        <div class="row" id="survRowOne">
+                            <div class="col col-lg-2"></div>
+                            <div class="col col-lg-8">
+                                <h2>Let's Get You All Set Up!</h2>
+                                <p>This will help us not only get to know you a little better, but make sure we find the right puppy match!</p>
+                                <hr>
+                                <h2 style="font-weight: bold;">About you</h2>
+                                <p>This first part is all about you! I know you're a good dog, but the more we know, the better! This willl also be the basis for your profile, think of it as a virtual butt to sniff.</p>
+                                <hr>
+                            </div>
+                            <div class="col col-lg-2"></div>
+                        </div>
+                        <div class="row" id="survRowTwo">
+                            <div class= "col col-sm-6">
+                                <h4>Name (Dog, that's you!)</h4>
+                                <input type="text" id="dogName" class="form-control" required>
+                                <h4>Photo</h4>
+                                <label class="file-upload-container" for="file-upload">
+                                    <input id="file-upload" type="file" style="display:none;">
+                                   <h4>Select an Image</h4>
+                                <h4>Human's Name</h4>
+                                <input type="text" id="humanName" class="form-control" required>
+                                <h4>Human's Zip Code</h4>
+                                <input type="text" id="zipCode" class="form-control" required>
+                                <h4>Human's Email</h4>
+                                <input type="text" id="email" class="form-control" required>
+                                <h4>Human's Password</h4>
+                                <input type="text" id="password" class="form-control" required>
+                            </div>
+                            <div class="col col-sm-6">
+                                <h4>Breed</h4>
+                                    <input type="text" id="breed" class="form-control" required>
+                                <h4>Age</h4>
+                                    <input type="text" id="age" class="form-control" required>
+                                <h4>Sex</h4>
+                                    <form action="/action_page.php">
+                                      <select id="sex"  style="width: 125px";>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                      </select>
+                                      <br><br>
+                                    </form>
+                                <h4>Fixed</h4>
+                                    <form action="/action_page.php">
+                                      <select id="fixed"  style="width: 125px";>
+                                        <option value="true">Yes (you poor thing)</option>
+                                        <option value="false">No (down boy!)</option>
+                                      </select>
+                                      <br><br>
+                                    </form>
+                                <h4>Size</h4>
+                                    <form action="/action_page.php">
+                                      <select id="size"  style="width: 125px";>
+                                        <option value="less25">Less than 25 lbs</option>
+                                        <option value="less50">Less than 50 lbs</option>
+                                        <option value="less75">Less than 75 lbs</option>
+                                        <option value="less100">Less than 100 lbs</option>
+                                        <option value="over100">Over 100 lbs</option>
+                                      </select>
+                                      <br><br>
+                                    </form>
+                                <h4>Temperament</h4>
+                                    <form action="/action_page.php">
+                                      <select id="temperament"  style="width: 125px";>
+                                        <option value="agressive">Agressive</option>
+                                        <option value="active">Active</option>
+                                        <option value="playful">Playful</option>
+                                        <option value="shy">Shy</option>
+                                        <option value="lazy">Lazy</option>
+                                        <option value="submissive">Submissive</option>
+                                      </select>
+                                      <br><br>
+                                    </form>
+
+                            </div>
+                            <div class="row" id="survRowThree">
+                                <div class="col col-sm-2"></div>
+                                <div class="col col-sm-8">
+                                    <h4>Description</h4>
+                                    <p>Don't be shy! How can the other dog's get to know you without a good sniff?</p>
+                                    <input type="text" id="Description" class="form-control" required>
+                                </div>
+                                <div class="col col-sm-1"></div>
+                            </div>
+                        </div>
+                        <div class="row" id="survRowFour">
+                            <h2 style="font-weight: bold;">Questions!</h2>
+                            <hr>
+                            <h3>Question 1</h3>
+                            <h4>A belly rub is superior to an ear scratch.</h4>
+                                <form action="/action_page.php">
+                                  <select id="q1"  style="width: 125px";>
+                                    <option value="1">1 (Most Agree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Least Agree)</option>
+                                  </select>
+                                  <br><br>
+                                </form>
+                            <h3>Question 2</h3>
+                            <h4>DO NOT boop my snoot.</h4>
+                                <form action="/action_page.php">
+                                  <select id="q2"  style="width: 125px";>
+                                    <option value="1">1 (Most Agree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Least Agree)</option>
+                                  </select>
+                                  <br><br>
+                                </form>
+                            <h3>Question 3</h3>
+                            <h4>Cats are friends not food.</h4>
+                                <form action="/action_page.php">
+                                  <select id="q3"  style="width: 125px";>
+                                    <option value="1">1 (Most Agree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Least Agree)</option>
+                                  </select>
+                                  <br><br>
+                                </form>
+                            <h3>Question 4</h3>
+                            <h4>Squirrels are for chasing.</h4>
+                                <form action="/action_page.php">
+                                  <select id="q4"  style="width: 125px";>
+                                    <option value="1">1 (Most Agree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Least Agree)</option>
+                                  </select>
+                                  <br><br>
+                                </form>
+                            <h3>Question 5</h3>
+                            <h4>A stick or more fun than a tennis ball.</h4>
+                                <form action="/action_page.php">
+                                  <select id="q5"  style="width: 125px";>
+                                    <option value="1">1 (Most Agree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Least Agree)</option>
+                                  </select>
+                                  <br><br>
+                                </form>
+                            <h3>Question 6</h3>
+                            <h4>I like to meet new people and/or dogs.</h4>
+                                <form action="/action_page.php">
+                                  <select id="q6"  style="width: 125px";>
+                                    <option value="1">1 (Most Agree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Least Agree)</option>
+                                  </select>
+                                  <br><br>
+                                </form>
+                            <h3>Question 7</h3>
+                            <h4>When my people leave I don't know if they will ever return.</h4>
+                                <form action="/action_page.php">
+                                  <select id="q7"  style="width: 125px";>
+                                    <option value="1">1 (Most Agree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Least Agree)</option>
+                                  </select>
+                                  <br><br>
+                                </form>
+                            <h3>Question 8</h3>
+                            <h4>The Mailman is an agent of Satan.</h4>
+                                <form action="/action_page.php">
+                                  <select id="q8"  style="width: 125px";>
+                                    <option value="1">1 (Most Agree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Least Agree)</option>
+                                  </select>
+                                  <br><br>
+                                </form>
+                            <h3>Question 9</h3>
+                            <h4>I like to be stylish and wear doggie-clothing.</h4>
+                                <form action="/action_page.php">
+                                  <select id="q9"  style="width: 125px";>
+                                    <option value="1">1 (Most Agree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Least Agree)</option>
+                                  </select>
+                                  <br><br>
+                                </form>
+                            <h3>Question 10</h3>
+                            <h4>The Veternarian is a friend.</h4>
+                                <form action="/action_page.php">
+                                  <select id="q10"  style="width: 125px";>
+                                    <option value="1">1 (Most Agree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Least Agree)</option>
+                                  </select>
+                                  <br><br>
+                                </form>
+                            <hr>
+                            <input type="submit" id="submitSurvey" class="submitBtn">
+                        </div>
+                    </div>
+
+                </div>
+                    
+            </div>
+        </div>
+           
+        <!-- </div> -->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="../../public/js/app.js"></script>
+    </body>
+</html>

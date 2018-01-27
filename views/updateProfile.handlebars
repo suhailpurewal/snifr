@@ -1,0 +1,88 @@
+<div id="container" class="surveyScroll">
+                    <div id="surveyPageTwo">
+                        <div class="row" id="survRowOne">
+                            <div class="col col-lg-2"></div>
+                            <div class="col col-lg-8">
+                                <h2>Dog Information!</h2>
+                                <p>This will help us not only get to know you a little better, but make sure we find the right puppy match!</p>
+                                <hr>
+                                <h2 style="font-weight: bold;">About you</h2>
+                                <p>On this page, we first need to know a little bit about you dog! Fill out these questions then click next to go on to the survey.</p>
+                                <hr>
+                            </div>
+                            <div class="col col-lg-2"></div>
+                        </div>
+                        <div class="row" id="survRowTwo">
+                            <div class= "col col-sm-6">
+                                <h4>Name (Dog, that's you!)</h4>
+                                <input type="text" id="dogName" class="form-control" required>
+                                <h4>Photo</h4>
+                                <label class="file-upload-container" for="file-upload">
+                                    <input id="file-upload" type="file" style="display:none;">
+                                   <h4>Select an Image</h4>
+                                <h4>Breed</h4>
+                                    <input type="text" id="breed" class="form-control" required>
+                                <h4>Age</h4>
+                                    <input type="text" id="age" class="form-control" required>
+
+                            </div>
+                            <div class="col col-sm-6">
+                                <h4>Sex</h4>
+                                    <form action="/action_page.php">
+                                      <select id="sex"  style="width: 125px";>
+                                        <option value="false">Male</option>
+                                        <option value="true">Female</option>
+                                      </select>
+                                      <br><br>
+                                    </form>
+                                <h4>Fixed</h4>
+                                    <form action="/action_page.php">
+                                      <select id="fixed"  style="width: 125px";>
+                                        <option value="true">Yes</option>
+                                        <option value="false">No</option>
+                                      </select>
+                                      <br><br>
+                                    </form>
+                                <h4>Size</h4>
+                                    <form action="/action_page.php">
+                                      <select id="size"  style="width: 125px";>
+                                        <option value="less25">Less than 25 lbs</option>
+                                        <option value="less50">Less than 50 lbs</option>
+                                        <option value="less75">Less than 75 lbs</option>
+                                        <option value="less100">Less than 100 lbs</option>
+                                        <option value="over100">Over 100 lbs</option>
+                                      </select>
+                                      <br><br>
+                                    </form>
+                                <h4>Temperament</h4>
+                                    <form action="/action_page.php">
+                                      <select id="temperament"  style="width: 125px";>
+                                        <option value="agressive">Agressive</option>
+                                        <option value="active">Active</option>
+                                        <option value="playful">Playful</option>
+                                        <option value="shy">Shy</option>
+                                        <option value="lazy">Lazy</option>
+                                        <option value="submissive">Submissive</option>
+                                      </select>
+                                      <br><br>
+                                    </form>
+                            </div>
+                        </div>
+                        <div class="row" id="survRowThree">
+                                <div class="col col-sm-2"></div>
+                                <div class="col col-sm-8">
+                                    <h4>Description</h4>
+                                    <p>Don't be shy! How can the other dog's get to know you without a good sniff?</p>
+                                    <input type="text" id="description" class="form-control" required>
+                                </div>
+                                <div class="col col-sm-1"></div>
+                            </div>
+                        <div class="row" id="survRowFour">
+                            <div class="col col-sm-10"></div>
+                            <div class="col col-sm-2">
+                                <button type="button" class="btn btn-success" id="updateProfile">Save</button>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>

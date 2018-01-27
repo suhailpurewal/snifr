@@ -1,0 +1,67 @@
+<div id="mainViewWindow">
+    {{#each Profile}}
+                    <div class="container" id="profileFull">
+                        <div class="row">
+                            <div class="col col-sm-5" id="profileImgCol">
+                                <div class="row">
+                                    <div class="row" id="profileImgRow">
+                                        <div class="row" id="profileName">
+                                            <h2>{{this.name}}</h2>      
+                                        </div>
+                                        <img id="profileImg" src="{{this.photo}}"">
+                                    </div>
+                                    <div class="row" id="sniffGrowlRow">
+                                        <div class="col col-sm-5">
+                                                <button type="button" class="btn btn-primary" id="sniffBtn">Sniff</button>
+                                        </div>
+                                        <div class="col col-sm-1"></div>
+                                        <div class="col col-sm-5">
+                                                <button type="button" class="btn btn-danger" id="growlBtn">Bark</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-sm-1"></div>
+                            <div class="col col-sm-5" id="profileInfoCol">
+                                <div class="row" id="profileBasicInfoCont1">
+                                    <div class="row" id="profileBasicInfoRow1">
+                                        <h2>Basic Info</h2>
+                                        <!-- <hr> -->
+                                    </div> 
+                                    <div class="row" id="profileBasicInfoRow2">
+                                        
+                                        <div class="col col-sm-5" id="profileBasicInfoCol1">
+                                            <h4 id="breed">Breed:{{this.breed}} </h4>
+                                            <h4 id="sex">Sex:{{#if this.sex}} Female{{else}} Male{{/if}} </h4>
+                                            <h4 id="size">Size:{{this.size}}</h4>
+                                            
+                                        </div>
+                                        <!-- <div class="col col-sm-1"></div> -->
+                                        <div class="col col-sm-5" id="profileBasicInfoCol2">
+                                            <h4 id="age">Age:{{this.age}} </h4>
+                                            <h4 id="fixed">Fixed:{{#if this.fixed}} Fixed {{else}} Not Fixed {{/if}} </h4>
+                                            <h4 id="temperament">Temperament:{{this.temperament}} </h4>
+                                        </div>
+                                    </div> 
+                                    <div class="row" id="profileBasicInfoRow3">
+                                        
+                                    </div>
+                                </div>
+                                <div class="row" id="profileBasicInfoCont2">
+                                    <div class="row" id="profileDescriptionHeader">
+                                        <h2>Description</h2>
+                                    </div>
+                                    <div class="row" id="profileDescriptionBody">
+                                        <p id="description">{{this.description}}</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+
+
+                        </div>
+                    </div>
+                    {{/each}}
+                </div> 

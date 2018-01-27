@@ -1,0 +1,29 @@
+#matches {
+    height: 75px;
+}
+
+#matchContainer {
+            
+
+        }
+
+ #dogMatchImg {
+ 	height: 100px;
+ 	width: auto;
+ 	display: block;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	margin-top: 10%;
+ }
+
+ #dogMatches {
+	border: 5px solid #00008B;
+            border-radius: 30px 30px 30px 30px;
+            display: block;
+            margin-top: 10%;
+            margin-left: 2%;
+            width: 100%;
+            height: 145px;
+            background-color: #FFFAF0;
+            position: relative;
+ }

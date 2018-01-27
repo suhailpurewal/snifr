@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "snifrdev",
+    "password": "Iz4OA~!snolU",
+    "database": "snifrdev",
+    "host": "den1.mysql1.gear.host",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "snifrdev",
+    "password": "Iz4OA~!snolU",
+    "database": "snifrdev",
+    "host": "den1.mysql1.gear.host",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "snifrdev",
+    "password": "Iz4OA~!snolU",
+    "database": "snifrdev",
+    "host": "den1.mysql1.gear.host",
+    "dialect": "mysql"
+  }
+}

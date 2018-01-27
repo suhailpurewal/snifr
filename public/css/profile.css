@@ -1,0 +1,110 @@
+#profileFull {
+    background-color: transparent;
+    border: 0px;
+}
+
+#profileImgRow {
+    border: 5px solid #00008B;
+    border-radius: 30px 30px 30px 30px;
+    display: block;
+    background-color: #FFFAF0;
+    height: 400px;
+    margin-top: 20%;
+    margin-left: 2%;
+}
+
+#profileName {
+    text-align: center;
+    font-family: Comic Sans MS, cursive, sans-serif;
+}
+
+#profileImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+}
+
+#sniffGrowlRow {
+    border: 5px solid #00008B;
+    border-radius: 30px 30px 30px 30px;
+    display: block;
+    background-color: #FFFAF0;
+    height: 60px;
+    margin-top: 25px;
+}
+
+#sniffBtn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 130px;
+    height: 40px;
+    margin-top: 3%;
+    font-size: 20px;
+}
+
+#growlBtn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 130px;
+    height: 40px;
+    margin-top: 3%;
+    font-size: 20px;
+}
+
+#profileInfoCol {
+    margin-top: 8%;
+}
+
+#profileBasicInfoCont2 {
+    border: 5px solid #00008B;
+    border-radius: 30px 30px 30px 30px;
+    display: block;
+    background-color: #FFFAF0;
+    height: 210px;
+    margin-top: 25px;
+}
+
+#profileDescriptionHeader {
+    text-align: center;
+}
+
+#profileDescriptionBody {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#profileBasicInfoCont1 {
+    border: 5px solid #00008B;
+    border-radius: 30px 30px 30px 30px;
+    display: block;
+    background-color: #FFFAF0;
+    height: 250px;
+    
+}
+
+#profileBasicInfoRow1 {
+    text-align: center;
+}
+
+#profileBasicInfoRow2 {
+    
+}
+
+#profileBasicInfoCol1 {
+    margin-left: 2%;
+}
+
+#profileBasicInfoCol1 h4{
+    margin-bottom: 30px;
+}
+
+#profileBasicInfoCol2 h4{
+    margin-bottom: 30px;
+}
+
+#profileBasicInfoRow3 {
+    
+}
